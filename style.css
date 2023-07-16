@@ -1,0 +1,89 @@
+/*Variables*/
+:root {
+    --black: #000;
+    --white:#fff;
+    --accents:#792E02;
+    --primary1:#c73339;
+    --primary2:#02499c;
+}
+/*Basic style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #D7D8DA;
+}
+.sketch {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--white);
+    margin: auto;
+    margin-top: 60px;
+}
+.pole {
+    width: 8px;
+    height: 230px;
+    background-color: var(--accents);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-30%);
+}
+.flag {
+    width: 120px;
+    height: 60px;
+    background: linear-gradient(var(--primary1)33%,var(--primary2)33%,var(--primary2)66%,var(--white)33%);
+    position:absolute;
+    left: 72%;
+    top: 15%;
+    transform: translate(-72%,-15%);
+    border: 2px solid var(--accents);
+}
+.eye1 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: var(--black);
+    left: 10px;
+    top: 10px;
+}
+.eye2 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: var(--black);
+    left: 70px;
+    top: 10px;
+}
+.eye1::before {
+    display: block;
+    content: "";
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+.eye2::before {
+    display: block;
+    content: "";
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+.mouth {
+    width: 35px;
+    height: 25px;
+    background: var(--black);
+    border-radius: 5px 5px 20px 20px;
+    position: absolute;
+    top: 30px;
+    left: 33px;
+}
